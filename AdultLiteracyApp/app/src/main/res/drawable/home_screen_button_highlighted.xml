@@ -1,0 +1,4 @@
+<!--highlighted home screen button-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/home_screen_button_background_highlighted" />
+</selector>

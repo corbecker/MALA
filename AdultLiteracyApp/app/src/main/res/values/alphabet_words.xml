@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alphabet_words">
+        <item>Ambulance</item>
+        <item>Bus</item>
+        <item>Calendar</item>
+        <item>Doctor</item>
+        <item>Exit</item>
+        <item>Fruit</item>
+        <item>Gym</item>
+        <item>House</item>
+        <item>Ireland</item>
+        <item>Jeep</item>
+        <item>Keys</item>
+        <item>Letter</item>
+        <item>Motorway</item>
+        <item>Nuts</item>
+        <item>Office</item>
+        <item>Pasta</item>
+        <item>Question</item>
+        <item>Rice</item>
+        <item>Swim</item>
+        <item>Time</item>
+        <item>Umbrella</item>
+        <item>Vet</item>
+        <item>Water</item>
+        <item>X-ray</item>
+        <item>Yoghurt</item>
+        <item>Zebra</item>
+    </string-array>
+</resources>

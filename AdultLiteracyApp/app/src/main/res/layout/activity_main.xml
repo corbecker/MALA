@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--layout for main home screen-->
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewSwitcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/adult_literacy_full_logo" />
+
+        <TextView
+            android:id="@+id/splash_screen_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/splash_screen_text_view"
+            android:textSize="40dp"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:progress="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/card_padding"
+        android:orientation="vertical"
+        android:background="@color/background_color">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/dolch_list_button"
+                style="@style/HomeScreenButtonsStyle"
+                android:drawableStart="@drawable/dolch_icon"
+                android:drawableLeft="@drawable/dolch_icon2"
+                android:text="@string/dolch_list_button_text"
+                android:contentDescription="@string/dolch_list_button_content_description"/>
+
+            <Button
+                android:id="@+id/exercises_button"
+                style="@style/HomeScreenButtonsStyle"
+                android:drawableStart="@drawable/alphabet_icon"
+                android:drawableLeft="@drawable/alphabet_icon"
+                android:text="@string/exercises_button_text"
+                android:contentDescription="@string/exercises_button_content_description"/>
+
+            <Button
+                android:id="@+id/vocabulary_builder_button"
+                style="@style/HomeScreenButtonsStyle"
+                android:drawableStart="@drawable/vocab_icon"
+                android:drawableLeft="@drawable/vocab_icon"
+                android:text="@string/vocabulary_builder_button_text"
+                android:contentDescription="@string/vocabulary_builder_button_content_description"/>
+
+            <Button
+                android:id="@+id/speech_recognition_button"
+                style="@style/HomeScreenButtonsStyle"
+                android:drawableStart="@drawable/sr_icon"
+                android:drawableLeft="@drawable/sr_icon"
+                android:text="@string/speech_recognition_button_text"
+                android:contentDescription="@string/speech_recognition_button_content_description"/>
+
+            <Button
+                android:id="@+id/ocr_button"
+                style="@style/HomeScreenButtonsStyle"
+                android:drawableStart="@drawable/ocr_icon"
+                android:drawableLeft="@drawable/ocr_icon"
+                android:text="@string/ocr_button_text"
+                android:contentDescription="@string/ocr_button_content_description"/>
+
+            <Button
+                android:id="@+id/text_to_speech_button"
+                style="@style/HomeScreenButtonsStyle"
+                android:text="@string/text_to_speech_button_text"
+                android:drawableStart="@drawable/tts_icon"
+                android:drawableLeft="@drawable/tts_icon"
+                android:contentDescription="@string/text_to_speech_button_content_description"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ViewSwitcher>

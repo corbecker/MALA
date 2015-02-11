@@ -1,0 +1,4 @@
+<!--normal background for capture button-->
+<color xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/transparent">
+</color>

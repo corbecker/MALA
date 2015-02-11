@@ -1,0 +1,10 @@
+[24-Feb-2015 22:39:45 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30
+[24-Feb-2015 22:43:37 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30
+[24-Feb-2015 22:45:15 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30
+[24-Feb-2015 22:45:19 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30
+[24-Feb-2015 22:45:29 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30
+[25-Feb-2015 12:38:11 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30
+[25-Feb-2015 12:38:24 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30
+[25-Feb-2015 12:38:49 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30
+[25-Feb-2015 12:40:19 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30
+[25-Feb-2015 12:41:06 Europe/Dublin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/corbinbe/public_html/literacy/Lit/DB/DAO/UsersDAO.php on line 30

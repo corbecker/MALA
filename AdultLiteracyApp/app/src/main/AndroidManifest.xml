@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.corbinbecker.activities">
+
+    <!--permissions for camera-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- permission for internet-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--Storage permission-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.PLAY_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/adult_literacy_full_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!--  Internet Permissions -->
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.corbinbecker.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/home_screen_label">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".OCRActivity"
+            android:label="@string/dolch_list_activity_label"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corbinbecker.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".WordShowcase"
+            android:label="@string/word_showcase_activity_label"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corbinbecker.activities.MainActivity" />
+
+            </activity>
+
+        <activity
+            android:name=".AlphabetExerciseActivity"
+            android:label="@string/drag_drop_game_label"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corbinbecker.activities.MainActivity" />
+        </activity>
+
+        <!-- Dolch List Activity -->
+        <activity
+            android:name=".DolchListActivity"
+            android:label="@string/dolch_list_activity_label"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corbinbecker.activities.MainActivity" />
+        </activity>
+
+        <!-- TTS word check Activity -->
+        <activity
+            android:name="com.corbinbecker.activities.TextToSpeechWordCheck"
+            android:label="@string/tts_word_check_label"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corbinbecker.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.corbinbecker.activities.LoginActivity"
+            android:label="Login Account"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corbinbecker.activities.MainActivity" />
+        </activity>
+
+        <!--  Register Activity -->
+        <activity
+            android:name="com.corbinbecker.activities.RegisterActivity"
+            android:label="Register New Account"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corbinbecker.activities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".VocabularyBuilderActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corbinbecker.activities.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>
