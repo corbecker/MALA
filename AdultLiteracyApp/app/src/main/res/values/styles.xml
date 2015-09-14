@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--removes line under action bar-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_back</item>
+        <item name="colorPrimary">@color/background_color</item>
+        <item name="colorAccent">@color/material_deep_teal_500</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+    </style>
+
+    <!-- ActionBar background style -->
+    <style name="MyActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
+        <item name="android:textColor">@color/action_bar_text</item>
+        <item name="displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="icon">@color/transparent</item>
+    </style>
+
+    <style name="ActionBarStyle.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/action_bar_text</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText" />
+
+    <style name="HomeScreenButtonsStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/home_screen_button</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="BackButtonStyle">
+        <item name="android:background">@drawable/ic_action_back</item>
+    </style>
+
+    <style name="CameraButtonStyle">
+        <item name="android:background">@drawable/ic_action_camera</item>
+    </style>
+
+
+
+</resources>

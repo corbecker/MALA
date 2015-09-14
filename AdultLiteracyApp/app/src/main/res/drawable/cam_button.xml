@@ -1,0 +1,8 @@
+<!--capture button on the camera screen-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/cam_button_background_pressed" />
+    <item
+        android:drawable="@drawable/cam_button_background" />
+</selector>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- camera preview layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <com.corbinbecker.views.RectangleView
+        android:id="@+id/dragRect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_button_camera_screen"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_action_back"
+        android:onClick="onBackButtonClick"
+        android:padding="10dp"
+        android:background="@drawable/cam_button"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transgray">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:id="@+id/capture_button_camera_screen"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_camera"
+            android:background="@drawable/cam_button"
+            android:contentDescription="@string/camera_button_content_description"
+            android:padding="20dp"
+            android:onClick="onCaptureButtonClick"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

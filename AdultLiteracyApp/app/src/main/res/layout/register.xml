@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/card_padding"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/card_background"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <!--Name field-->
+        <EditText
+            android:id="@+id/register_name_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_name_edittext_hint"
+            android:contentDescription="@string/register_name_edittext_content_description"/>
+
+        <!--Email field-->
+        <EditText
+            android:id="@+id/register_email_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_email_edittext_hint"
+            android:contentDescription="@string/register_email_edittext_content_description"/>
+
+        <!--Password field-->
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:hint="@string/register_password_edittext_hint"
+            android:contentDescription="@string/register_password_edittext_content_description"/>
+
+        <!--Text view to display registration error -->
+        <TextView
+            android:id="@+id/registration_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" />
+
+        <!--Submit registration details button-->
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/generic_button"
+            android:text="@string/register_button_text"
+            android:onClick="onRegisterButtonClick"
+            android:contentDescription="@string/register_button_content_description"/>
+
+        <!--Return to login screen button -->
+        <Button
+            android:id="@+id/login_screen_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/generic_button"
+            android:text="@string/login_screen_button_text"
+            android:contentDescription="@string/login_screen_button_content_description"
+            android:onClick="onLinkToLoginScreenClick"/>
+    </LinearLayout>
+
+</LinearLayout>

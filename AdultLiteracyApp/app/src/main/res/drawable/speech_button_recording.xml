@@ -1,0 +1,4 @@
+<!-- speech recognition button red when recording-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/speech_button_recording_background" />
+</selector>

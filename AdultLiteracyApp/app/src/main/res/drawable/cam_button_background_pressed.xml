@@ -1,0 +1,5 @@
+<!--pressed background for the camera button-->
+<color xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/trans_background_color">
+
+</color>

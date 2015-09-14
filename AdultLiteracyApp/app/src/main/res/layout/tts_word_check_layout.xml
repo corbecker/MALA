@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/card_padding"
+    android:background="@color/background_color"
+    android:windowSoftInputMode="stateAlwaysVisible">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/tts_word_check_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:hint="@string/tts_edit_text_hint"
+            android:textSize="20sp"
+            android:gravity="top|left"
+            android:layout_weight="4"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/tts_edit_text_content_description"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/tts_word_check_go_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/tts_word_check_play_button"
+                android:contentDescription="@string/text_to_speech_go_button_content_description"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

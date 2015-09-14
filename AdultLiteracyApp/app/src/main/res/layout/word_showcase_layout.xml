@@ -1,0 +1,158 @@
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewSwitcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".WordShowcase">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/adult_literacy_full_logo" />
+
+        <TextView
+            android:id="@+id/splash_screen_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/splash_screen_text_view"
+            android:textSize="40dp"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:progress="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/card_padding"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/card_background"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/favourite_star_checkbox_word_showcase"
+            android:button="@drawable/star_button"
+            android:contentDescription="@string/dolch_word_favourite_hint"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/word_showcase_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dolch_card_text"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_weight="2" />
+            </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/word_showcase_description_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/dolch_card_text"
+                android:textSize="20sp"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                />
+            </ScrollView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <!--<Button
+                android:id="@+id/dolch_card_record_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/dolch_card_record_button_text"/>-->
+
+            <Button
+                android:id="@+id/word_showcase_play_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/generic_button"
+                android:text="@string/word_showcase_play_button_text"
+                android:contentDescription="@string/word_showcase_play_button_content_description"/>
+
+            <Button
+                android:id="@+id/word_showcase_play_description_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/generic_button"
+                android:text="@string/word_showcase_describe_button_text"
+                android:contentDescription="@string/word_showcase_define_button_content_description" />
+
+            <Button
+                android:id="@+id/word_showcase_stop_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/generic_button"
+                android:layout_marginBottom="20dp"
+                android:text="@string/word_showcase_stop_button_text"
+                android:contentDescription="@string/word_showcase_stop_button_content_description"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ViewSwitcher>

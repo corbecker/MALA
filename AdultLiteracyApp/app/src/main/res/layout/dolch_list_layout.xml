@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--layout for dolch list activity-->
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewSwitcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/adult_literacy_full_logo" />
+
+        <TextView
+            android:id="@+id/splash_screen_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/splash_screen_text_view"
+            android:textSize="40dp"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:progress="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/card_padding"
+        android:background="@color/background_color">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/card_background"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/generic_clear_background"
+                android:id="@+id/favouriteStarCheckBox"
+                android:button="@drawable/star_button"
+                android:contentDescription="@string/dolch_word_favourite_hint" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:id="@+id/dolch_list_card_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dolch_card_text"
+                    android:shadowColor="@color/transparent"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="100"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/dolch_list_word_text_view_content_description" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/dolch_card_prev_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="3dp"
+                    android:background="@drawable/generic_button"
+                    android:text="@string/dolch_card_prev_button_text"
+                    android:contentDescription="@string/dolch_list_prev_button_content_description" />
+
+                <Button
+                    android:id="@+id/dolch_card_next_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/generic_button"
+                    android:layout_marginBottom="20dp"
+                    android:paddingBottom="3px"
+                    android:paddingRight="3px"
+                    android:text="@string/dolch_card_next_button_text"
+                    android:contentDescription="@string/dolch_list_next_button_content_description" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/play_recording_button_dolch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/generic_button"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="@string/play_recording_button_text"
+                    android:contentDescription="@string/hear_button_content_description" />
+
+                <Button
+                    android:id="@+id/dolch_record_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/generic_button"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="@string/alphabet_exercise_record_button_text"
+                    android:contentDescription="@string/alphabet_exercise_record_button_content_description" />
+
+                <Button
+                    android:id="@+id/dolch_card_play_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/generic_button"
+                    android:text="@string/dolch_card_play_button_text"
+                    android:contentDescription="@string/dolch_list_play_button_content_description" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ViewSwitcher>

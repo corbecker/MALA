@@ -1,0 +1,14 @@
+
+1.Download libraries zip file from: https://www.dropbox.com/s/7rapz8om7qk3gzb/libraries.zip?dl=0
+
+2.Unzip and move 'libraries' file to 'AdultLiteracyApp' directory (the submitted file from webcourses)
+
+3.Open Android Studio
+
+4.File>Import Project>AdultLiteracyApp || open existing android studio app>AdultLiteracyApp
+
+5.Click 'Run' button to build and run on emulator or connected device.
+
+6.Linked to remote DB middleware files e=included for evaluation. 
+
+
