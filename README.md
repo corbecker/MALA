@@ -19,3 +19,12 @@ as possible to provide a friendly learning environment that supports exploration
 
 The application requires an android device with an 8mp camera or greater for the OCR functionalities, if the application
 detects no camera these features are excluded. 
+
+To install on Android device: 
+
+1. Download libraries file here: https://www.dropbox.com/s/7rapz8om7qk3gzb/libraries.zip?dl=0
+2. Unzip and move libraries file to AdultLiteracyApp directory.
+3. Open Android Studio.
+4. File>Import> Project> AdultLiteracyApp || Open Existing Android Studio App> AdultLiteracyApp
+5. Click 'Run' to run on emulator or connected device (Emulator will not support TTS, SR or OCR functionality)
+
